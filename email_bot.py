@@ -20,7 +20,8 @@ from openai import OpenAI
 #   GMAIL_EMAIL, GMAIL_APP_PASSWORD
 #   OUTLOOK1_EMAIL, OUTLOOK1_PASSWORD
 #   OUTLOOK2_EMAIL, OUTLOOK2_PASSWORD
-#   ... up to OUTLOOK5_EMAIL / OUTLOOK5_PASSWORD
+#   OUTLOOK3_EMAIL, OUTLOOK3_PASSWORD
+#   OUTLOOK4_EMAIL, OUTLOOK4_PASSWORD
 # Accounts with no email set are skipped automatically.
 
 ACCOUNTS = [
@@ -73,17 +74,6 @@ ACCOUNTS = [
         "label": "📨 Outlook #4",
         "email": os.environ.get("OUTLOOK4_EMAIL"),
         "password": os.environ.get("OUTLOOK4_PASSWORD"),
-        "imap_host": "outlook.office365.com",
-        "smtp_host": "smtp.office365.com",
-        "smtp_port": 587,
-        "trash": "Deleted",
-        "archive": "Archive",
-    },
-    {
-        "key": "outlook_5",
-        "label": "📨 Outlook #5",
-        "email": os.environ.get("OUTLOOK5_EMAIL"),
-        "password": os.environ.get("OUTLOOK5_PASSWORD"),
         "imap_host": "outlook.office365.com",
         "smtp_host": "smtp.office365.com",
         "smtp_port": 587,
