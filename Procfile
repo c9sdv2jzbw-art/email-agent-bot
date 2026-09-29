@@ -1,0 +1,1 @@
+worker: python3 email_bot.py
